@@ -1,0 +1,123 @@
+body {
+
+    background-color: green;
+}
+
+
+
+.carré1{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+
+.anims {
+
+}
+.cercle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+    animation: moveDown 4s linear infinite;
+    position: absolute;
+    
+    
+}
+
+
+.cercle2 {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: chocolate;
+    position: absolute;
+}
+
+.anim-1 {
+    margin-left: 80px;
+    animation: animation-1  2s infinite alternate;
+
+}
+
+@keyframes animation-1 {
+    from {
+        margin-top: 0; /* Position de départ du cercle */
+        
+    }   
+    to  {
+        margin-top: 157px; /* Position finale du cercle */
+        
+    }   
+}
+
+@keyframes  animation-2 {
+    0% {
+        top: 0; /* Position de départ en haut */
+        left: 0; /* Position de départ à gauche */
+    }
+    25% {
+        top: 80px; /* Déplacement vers le bas */
+        left: 80px; /* Déplacement vers la droite */
+    }
+    50% {
+        top: 160px; /* Position intermédiaire en bas */
+        left: 160px; /* Position intermédiaire à droite */
+    }
+    75% {
+        top: 80px; /* Déplacement vers le haut */
+        left: 80px; /* Déplacement vers la gauche */
+    }
+    100% {
+        top: 0; /* Position finale en haut */
+        left: 0; /* Position finale à gauche */
+
+    }
+}
+
+.anim-2 {
+    animation: animation-2  2s infinite alternate;
+
+}
+
+.cercle3{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: grey;
+    position: absolute;
+    
+
+
+}
+
+.anim-3 {
+
+animation: animation-3 2s infinite alternate;
+
+}
+
+
+
+@keyframes animation-3{
+    0% {
+        top: 0; /* Position de départ en haut */
+        left: 0; /* Position de départ à gauche */
+    }
+    
+    33%{
+        top: 0; /* Position intermédiaire en haut */
+        left: 160px; /* Déplacement vers la droite */
+    
+    }
+    66%{ 
+        top: 160px;
+        left:  0px;
+    }
+    100% {
+        top: 160px; /* Position finale en bas */
+        left: 160px; /* Position finale à gauche */
+    }
+}
